@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'JK Flutter Demo',
+      title: 'JK Flutter Demo 34',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.yellow
       ),
-      home: MyHomePage(title: 'JK Flutter Demo Home Page'),
+      home: MyHomePage(title: 'JK Flutter Demo Home Page 12345'),
     );
   }
 }
@@ -93,6 +93,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               '点击的次数:',
+              textDirection: TextDirection.ltr,
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+              ),
             ),
             Text(
               '$_counter',
